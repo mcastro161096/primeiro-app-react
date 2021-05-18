@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './style.css';
+import Rotas from '../Rotas/'
+import {Link} from 'react-router-dom';
+
 
 export default function NumeroAleatorio() {
     const [numeroaleatorio, setNumero] = useState(0);
@@ -23,6 +26,10 @@ export default function NumeroAleatorio() {
             <button onClick={gerar}>
                 Gerar número
             </button>
+            </div>
+            <div>
+                <button><Link to="/front-end">Front-end</Link></button>
+               <button> <Link to="/back-end">Back-end</Link></button>
             </div>
             
         </div>
